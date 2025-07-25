@@ -1,0 +1,183 @@
+<!-- 🔥 Javascript Interview Questions -->
+🟢 Beginner-Level
+
+    What is the difference between var, let, and const?
+    - Scope
+        + let, const: block scope
+        + var: function scope
+
+    - Assignable
+        + let & var: yes
+        + const: no
+
+    - Re-declarable
+        + let: CAN re-declarable
+        + var & const: CANNOT re-declarable
+
+    - Hosting:
+        + var: yes (undefined)
+        + let & const: yet (TDZ)
+
+
+    What are primitive data types in JavaScript?
+    - There 7 primitive data types:
+        + string
+        + Number
+        + boolean
+        + undefined
+        + null
+        + bigInt
+        + symbol
+
+
+    What is hoisting in JavaScript?
+    - Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their scope during the compile phase—before code execution.
+
+    What is the difference between == and ===?
+    - ==: Compare value. Auto re-format type 
+    - ===: Compare type & value
+
+    What is the DOM?
+    - The DOM stands for the Document Object Model.
+    - Turns HTML into an object-based tree that JavaScript can read and change.
+
+| Task                              | Example                                  |
+| --------------------------------- | ---------------------------------------- |
+| Access elements                   | `document.getElementById()`              |
+| Change content                    | `element.textContent = "Hi!"`            |
+| Change style                      | `element.style.color = "red"`            |
+| Add/remove elements               | `element.appendChild()`                  |
+| Handle user events (clicks, etc.) | `element.addEventListener("click", ...)` |
+
+    What is the difference between null and undefined?
+    - null: declared  & assign as empty;
+    - undefined: declared  but not assign value yet
+
+    What does the typeof operator return?
+    - return string indicating the type of the given operand.
+    
+    What are truthy and falsy values in JavaScript?
+
+
+    What is the use of the isNaN() function?
+    - to check value if is Not-a-Number
+
+    What are template literals in JavaScript?
+
+🟡 Intermediate-Level
+
+    What is a closure in JavaScript?
+    - A closure occurs when a function is defined inside another function and gains access to the outer function’s variables.
+
+    What is the difference between function declarations and expressions?
+    - Hoisted:
+        + declarations: yes
+        + expressions: a part (only variable hoisted)
+    - Used in IIFE
+        + declarations: no
+        + expressions: yes
+
+    What are arrow functions and how are they different?
+
+    What is event delegation?
+
+    What is the difference between synchronous and asynchronous code?
+
+    How do JavaScript promises work?
+    - A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+    What is the purpose of the this keyword?
+    - To refer to the current object the code is working with
+    - To make functions reusable by dynamically accessing different objects
+    - To allow methods to refer to their owning object
+
+    What is the use of bind(), call(), and apply()?
+    - Used to manipulate the value of this in functions.
+
+    What is object destructuring in JavaScript?
+
+    How does the spread/rest operator work?
+
+🔴 Advanced-Level
+
+    What is the event loop in JavaScript?
+    Event loop is a way Javascript handle asynchronous function. It contained CallStack, EventLoop, Queue, Web API
+    
+    What are microtasks and macrotasks?
+    - When code executed, it will decided which is microtask and which is macrotasks.
+    microtaks is higher priority (fetch, asyn/await)
+    macrotaks is lower priority (setTimeout, setInterver)
+    
+
+    What is the call stack?
+    It where code executed. first come first servered (microtask before macortaks)
+
+    What is a higher-order function?
+
+    What is currying in JavaScript?
+
+    What are debouncing and throttling?
+
+    What are the different ways to deep clone an object?
+
+    What is prototypal inheritance?
+
+    What is the difference between Object.create() and constructor functions?
+
+    How does async/await work internally?
+
+
+<!-- 🔥 jQuery Interview Questions -->
+Basics
+
+    What is jQuery and why was it so popular?
+    - jQuery is a javascript library to simplelize HTML file, event handling, animation, ajax interaction, etc
+
+    How do you include jQuery in a web page?
+
+    What is the difference between $(document).ready() and window.onload?
+
+| Feature                       | `$(document).ready()`                                                                                                  | `window.onload`                                                                               |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **When it fires**             | When the **DOM is fully loaded and parsed**, but **before images, stylesheets, and other resources are fully loaded**. | When **everything** on the page is fully loaded, including images, stylesheets, iframes, etc. |
+| **Usage**                     | Commonly used in jQuery to safely run code as soon as the DOM is ready for manipulation.                               | Native JavaScript event, runs later than `$(document).ready()`.                               |
+| **Multiple handlers support** | Supports multiple handlers without overwriting each other.                                                             | Can overwrite if multiple handlers assigned improperly (unless using `addEventListener`).     |
+| **Performance**               | Fires earlier, so UI interactions can be initialized sooner.                                                           | Fires later, may delay execution if large resources are loading.                              |
+
+    How do you select elements in jQuery? Give some examples.
+    - By id: $("#id")
+    - By class: $(".class")
+    - By tag name: $("div")
+    - By Atrribute: $("input[type='text']")
+    - Descendant Selector: $("#container p"): Select all <p> inside id container
+    - Multiple Selectors: $("h1, .highlight, #footer"): Selects all <h1> elements, elements with class highlight, and the element with id footer.
+
+    What is chaining in jQuery? Provide an example.
+    - Chaining means calling multiple jQuery methods on the same set of elements in a single statement, one after another.
+
+DOM Manipulation & Events
+
+    How do you add, remove, or toggle classes using jQuery?
+    - $('.class').addClass()
+    - $('.class').removeClass()
+    - $('.class').toggle()
+
+
+    How can you hide and show elements with jQuery?
+    - Use method like hide() show() toggle()
+
+    How do you handle events like click or hover in jQuery?
+    - Use method event like clikc() hover() or on();
+
+
+    What is event delegation in jQuery and why is it useful?
+
+    How do you prevent the default behavior of an event in jQuery?
+
+Ajax & Effects
+
+    How do you perform an Ajax request with jQuery?
+
+    What are some common effects/animations provided by jQuery?
+
+    What is the difference between .bind(), .live(), and .on() in jQuery?
