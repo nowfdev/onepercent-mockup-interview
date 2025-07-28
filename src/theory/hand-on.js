@@ -391,3 +391,61 @@ async function processData() {
 // .css('font-size', "18px").
 // .addClass(".highlighed")
 // .fadeOut(2000)
+
+// ------------------------------------- Practice w/ array, object -----------------------------------------------------
+// 1. Sum of Numbers
+// By using for loop
+const calculate = () => {
+  let total = 0;
+  const nums = [1, 2, 3, 4, 5];
+  for (let i = 0; i < nums.length; i++) {
+    total += nums[i];
+  }
+  return total;
+};
+calculate();
+
+// By using reduce
+const nums = [1, 2, 3, 4, 5];
+const result = nums.reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+
+// 2. Filter Even Numbers
+const nums = [1, 2, 3, 4, 5, 6];
+const result = nums.filter((item) => item % 2 == 0);
+
+// 3. Get Names from People
+const people = [
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 25 },
+  { name: "Eve", age: 19 },
+];
+// Return an array of names only
+const result = people.map((item) => item.name);
+
+// 4. Sort People by Age (Ascending)
+const people = [
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 25 },
+  { name: "Eve", age: 19 },
+];
+// Sort the array by age (youngest to oldest)
+const result = people.sort((a, b) => a.age - b.age);
+
+// 5. Group by Age
+const people = [
+  { name: "Tom", age: 17 },
+  { name: "Anna", age: 21 },
+  { name: "Jack", age: 17 },
+];
+// Output should group people by age
+const groupedByAge = people.reduce((acc, person) => {
+  if (!acc[person.age]) {
+    acc[person.age] = [];
+  }
+
+  acc[person.age].push(person.name);
+
+  return acc;
+}, {});
