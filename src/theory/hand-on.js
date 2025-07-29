@@ -449,5 +449,3 @@ const groupedByAge = people.reduce((acc, person) => {
 
   return acc;
 }, {});
-
-// Test commit
