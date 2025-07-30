@@ -1,0 +1,111 @@
+✅ Basic JavaScript Questions
+What are the different data types in JavaScript?
+
+What is the difference between var, let, and const?
+
+What are truthy and falsy values in JavaScript?
+
+How does type coercion work in JavaScript?
+
+What is the difference between == and ===?
+
+What is hoisting in JavaScript?
+
+What is the typeof operator and what does it return?
+
+What is the difference between null and undefined?
+
+How do you create and use functions in JavaScript?
+
+What is the difference between function declaration and function expression?
+
+🧠 Intermediate JavaScript Questions
+What are arrow functions and how are they different from regular functions?
+
+What is the scope of a variable in JavaScript?
+
+What is closure in JavaScript? Can you give an example?
+
+How does the event loop work in JavaScript?
+
+What is the difference between synchronous and asynchronous code?
+
+What is the difference between map(), filter(), and reduce()?
+
+What are template literals?
+
+What is destructuring in JavaScript?
+
+What is the spread operator and rest parameter?
+
+What are higher-order functions?
+
+🔁 Objects, Arrays, and Functions
+How do you loop over an object in JavaScript?
+
+What is the difference between for...in and for...of?
+
+What is object destructuring?
+
+How do you clone an object in JavaScript?
+
+What is the difference between Object.assign() and the spread operator?
+
+How do you remove a property from an object?
+
+What is the difference between shallow copy and deep copy?
+
+⏱️ Asynchronous JavaScript
+What is a Promise?
+
+How does async / await work?
+
+What are the different states of a Promise?
+
+What is callback hell and how do you avoid it?
+
+What is the difference between microtasks and macrotasks?
+
+📦 JavaScript Concepts
+What is this in JavaScript? How is it determined?
+
+What is the prototype chain?
+
+What is prototypal inheritance?
+
+What are ES6 modules and how do they work?
+
+What is a pure function?
+
+What is immutability?
+
+🛑 Error Handling
+What is the difference between throw and try...catch?
+
+What is the difference between a runtime error and a syntax error?
+
+💡 Miscellaneous / Tricky Questions
+What is event delegation?
+
+Can you explain debounce and throttle?
+
+What are IIFEs (Immediately Invoked Function Expressions)?
+
+What are generator functions?
+
+What are WeakMap and WeakSet?
+
+What is memory leak and how to prevent it?
+
+Why is JavaScript single-threaded?
+
+🎯 Optional: Practical Tasks / Coding Questions
+Reverse a string without using .reverse().
+
+Find the most frequent element in an array.
+
+Check if a string is a palindrome.
+
+Deep clone a nested object.
+
+Write a custom implementation of Array.prototype.map().
